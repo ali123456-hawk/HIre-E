@@ -25,10 +25,11 @@ const SignUp = () => {
       <div className={styles.authContainer}>
         <h2>Sign Up</h2>
         <form onSubmit={handleSubmit}>
+          
           <div className={styles.inputGroup}>
-            <label>Email:</label>
+            <label>FirstName</label>
             <input
-              type="email"
+              type="text"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -36,7 +37,27 @@ const SignUp = () => {
           </div>
 
           <div className={styles.inputGroup}>
-            <label>Password:</label>
+            <label>LastName</label>
+            <input
+              type="text"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className={styles.inputGroup}>
+            <label>UserName</label>
+            <input
+              type="text"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className={styles.inputGroup}>
+            <label>Create Password</label>
             <input
               type="password"
               value={password}
@@ -44,6 +65,28 @@ const SignUp = () => {
               required
             />
           </div>
+          <div className={styles.inputGroup}>
+            <label>Your Email</label>
+            <input
+              type="email"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className={styles.inputGroup}>
+            <label>Your Mobile#</label>
+            <input
+              type="number"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+
+
+          
 
           {error && <p className={styles.errorMessage}>{error}</p>}
 

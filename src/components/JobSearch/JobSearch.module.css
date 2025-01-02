@@ -1,0 +1,57 @@
+.container {
+    width: 1000px;
+    height: 800px;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Center elements horizontally */
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Make nav take full width */
+    margin-bottom: 20px;
+  }
+  
+  .navButton {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .search {
+    margin-bottom: 20px;
+    width: 80%; /* Adjust width of search input */
+  }
+  
+  .search input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    width: 100%; /* Make input take full width of search section */
+  }
+  
+  .filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%; /* Adjust width of filters section */
+  }
+  
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    width: 100%; /* Make filter items take full width */
+  }

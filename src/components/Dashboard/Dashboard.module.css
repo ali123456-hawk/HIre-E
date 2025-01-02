@@ -1,0 +1,55 @@
+.container {
+    width: 1000px; /* Adjust width as needed */
+    height: 800px;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .navButton {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .stat {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+  }
+  
+  .statLabel {
+    font-weight: bold;
+  }
+  
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .actionButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

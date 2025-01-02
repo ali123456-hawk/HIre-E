@@ -2,19 +2,30 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SignIn from "./components/SignIn/SignIn";
-import SignUp from "./components/SignUp/SignUp";
+import SignUp from "./components/SignUp/MultiStepForm";
 import Header from "./components/Header/header";
 import Home from "./components/Home/home";
+import Dashboard from "./components/Dashboard/Dashboard";
+import JobSearch from "./components/JobSearch/JobSearch";
+import "../src/App.css";
+
 
 const App = () => {
   return (
     <Router>
       <div className="app">
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
+          
+            <Route path="/signup" element={<SignUp />} />
+
+        
           <Route path="/Home" element={<Home />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/JobSearch" element={<JobSearch />} />
+
+
           <Route path="/" element={<SignIn />} />
           {/* Add more routes for your app, such as Dashboard */}
         </Routes>
