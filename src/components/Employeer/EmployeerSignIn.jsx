@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Auth.module.css';
+import { Link } from 'react-router-dom';
+
 
 const EmployeerSignIn = () => {
   const [activeTab, setActiveTab] = useState('signin'); // State to manage active tab
@@ -30,6 +32,9 @@ const EmployeerSignIn = () => {
             <input type="email" placeholder="Email" className={styles.input} />
             <input type="password" placeholder="Password" className={styles.input} />
             <button type="submit" className={styles.button}>Login</button>
+            <Link to="/signin">
+                              <button type="button">Back</button>
+                  </Link>
           </form>
         </div>
       ) : (
@@ -44,6 +49,8 @@ const EmployeerSignIn = () => {
             <input type="email" placeholder="Your Email" className={styles.input} />
             <input type="text" placeholder="Your Mobile #" className={styles.input} />
             <button type="submit" className={styles.button}>Register</button>
+            <button type="submit" className={styles.button}>SignIn</button>
+
           </form>
         </div>
       )}

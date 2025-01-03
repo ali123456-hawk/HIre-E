@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Auth.module.css';
+import { Link } from 'react-router-dom';
+
 
 const EmployeerSignUp = () => {
   return (
@@ -14,6 +16,9 @@ const EmployeerSignUp = () => {
         <input type="email" placeholder="Your Email" className={styles.input} />
         <input type="text" placeholder="Your Mobile #" className={styles.input} />
         <button type="submit" className={styles.button}>Register</button>
+        <Link to="/signin">
+                  <button type="button">Back</button>
+      </Link>
       </form>
     </div>
   );
