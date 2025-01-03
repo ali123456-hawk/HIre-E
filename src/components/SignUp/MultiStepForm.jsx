@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./MultiStepForm.module.css";// Importing the CSS module
 
 
-const App = () => {
+const MultiStepForm = () => {
   return (
     <div className={styles.fullPageContainer}>
       <div className={styles.card}>
@@ -99,4 +99,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default MultiStepForm;

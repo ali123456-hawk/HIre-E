@@ -1,0 +1,131 @@
+
+  
+  .position {
+   
+    width: 800px;
+    margin-top:20%;
+    padding: 20px;
+    background: #202020;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .searchBar {
+    max-width: 800px; /* Increased the search bar width */
+    display: flex;
+    align-items: center;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px auto;
+  }
+  
+  .searchBar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .filters label {
+    font-size: 14px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .jobList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .jobItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #333;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+  
+  .jobItem:hover {
+    background: #444;
+    transform: translateY(-3px);
+  }
+  
+  .jobDetails {
+    flex: 1;
+  }
+  
+  .jobItem h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .jobItem p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  .vacant {
+    color: green;
+  }
+  
+  .filled {
+    color: orange;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .jobItem {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .icon {
+      margin-top: 10px;
+      align-self: flex-end;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .searchBar input {
+      font-size: 14px;
+    }
+  
+    .jobItem h2 {
+      font-size: 16px;
+    }
+  
+    .jobItem p {
+      font-size: 12px;
+    }
+  }
+  

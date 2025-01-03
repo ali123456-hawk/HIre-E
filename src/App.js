@@ -10,6 +10,13 @@ import JobSearch from "./components/JobSearch/JobSearch";
 import EmployeerSignIn from "./components/Employeer/EmployeerSignIn";
 import EmployeerSignUp from "./components/Employeer/EmployeerSignUp";
 import Success from "./components/Employeer/Success";
+import JobCategories from "./components/JobSearch/JobCategories";
+import JobList from "./components/JobSearch/JobList";
+import Position from "./components/Employeer/Position";
+import EmployeerDashboard from "./components/Employeer/EmployeerDashboard";
+
+
+
 import "../src/App.css";
 
 
@@ -30,7 +37,10 @@ const App = () => {
           <Route path="/EmployeerSignIn" element={<EmployeerSignIn />} />
           <Route path="/EmployeerSignUp" element={<EmployeerSignUp />} />
           <Route path="/Success" element={<Success />} />
-
+          <Route path="/JobCategories" element={<JobCategories />} />
+          <Route path="/JobList" element={<JobList />} />
+          <Route path="/Position" element={<Position />} />
+          <Route path="/EmployeerDashboard" element={<EmployeerDashboard />} />
 
 
           <Route path="/" element={<SignIn />} />
