@@ -7,6 +7,9 @@ import Header from "./components/Header/header";
 import Home from "./components/Home/home";
 import Dashboard from "./components/Dashboard/Dashboard";
 import JobSearch from "./components/JobSearch/JobSearch";
+import EmployeerSignIn from "./components/Employeer/EmployeerSignIn";
+import EmployeerSignUp from "./components/Employeer/EmployeerSignUp";
+import Success from "./components/Employeer/Success";
 import "../src/App.css";
 
 
@@ -24,6 +27,10 @@ const App = () => {
           <Route path="/Home" element={<Home />} />
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/JobSearch" element={<JobSearch />} />
+          <Route path="/EmployeerSignIn" element={<EmployeerSignIn />} />
+          <Route path="/EmployeerSignUp" element={<EmployeerSignUp />} />
+          <Route path="/Success" element={<Success />} />
+
 
 
           <Route path="/" element={<SignIn />} />

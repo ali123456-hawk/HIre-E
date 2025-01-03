@@ -1,6 +1,6 @@
 // src/components/SignIn/SignIn.js
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import styles from './SignIn.module.css';
 
 const SignIn = () => {
@@ -48,6 +48,19 @@ const SignIn = () => {
           {error && <p className={styles.errorMessage}>{error}</p>}
 
           <button type="submit">Sign In</button>
+          <Link to="/signup">
+            <button type="button">Sign Up</button>
+          </Link>
+          <Link to="/EmployeerSignIn">
+          <button type="button">For Employers</button>
+          </Link>
+          <Link to="/signup">
+          <button type="button">Browse Jobs</button>
+          </Link>
+         
+          
+
+
         </form>
 
         <p>Don't have an account? <a href="/signup">Sign Up</a></p>
