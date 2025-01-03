@@ -1,0 +1,77 @@
+/* Container for the entire category page */
+.container {
+    margin-top: -100px;
+    background-color: #1a1a2e;
+    color: #f5f5f5;
+    padding: 20px;
+    border-radius: 20px;
+    width: 800px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header and back button styling */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .backButton {
+    background-color: #3a3a5e;
+    color: #f5f5f5;
+    border: none;
+    width: 10%;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .backButton:hover {
+    background-color: #525285;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  .backButton:active {
+    background-color: #2a2a4a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+  }
+  
+  /* Category List */
+  .categoryList {
+    margin-top: 20px;
+  }
+  
+  .category {
+    background-color: #282846;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category:hover {
+    background-color: #3b3b60;
+  }
+  
+  .categoryText {
+    font-size: 1rem;
+    color: #f5f5f5;
+  }
+  
+  .arrow {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+  }
+  
