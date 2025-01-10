@@ -5,11 +5,14 @@ function Dashboard() {
   return (
     <div className={styles.container}>
       <h1>Hello, Amin!</h1>
+      
       <div className={styles.nav}>
         <button className={styles.navButton}>Dashboard</button>
         <button className={styles.navButton}>Job Search</button>
       </div>
       <div className={styles.stats}>
+                <button className={styles.navButton}>Job Search</button>
+
         <div className={styles.stat}>
           <span className={styles.statLabel}>Jobs Applied</span>
           <span className={styles.statValue}>14</span>

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-//const BASE_URL = 'http://192.168.3.166:8080/api/onboarding';
+//const BASE_URL = 'http://192.168.3.166:8080/api/indv/IndividualOnboarding';  //SignUp
 
 export const individualOnboarding = async (data,url) => {
   try {

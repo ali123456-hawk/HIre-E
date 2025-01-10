@@ -135,19 +135,20 @@ const MultiStepForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const BASE_URL = 'http://192.168.3.166:8080/api/onboarding';
+      const BASE_URL = 'http://192.168.3.166:8080/api/indv/IndividualOnboarding';
       console.log("Request Payload:", formData);
       const response = await individualOnboarding(formData,BASE_URL);
       console.log("API Response:", response);
       if (response.code === '00') {
         alert("Onboarding successful!");
         navigate('/signin'); // Redirect to SignIn page
+
       }  else {
         alert("Onboarding failed. Response code: " + response.code);
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Onboarding failed. Check console for details.");
+
     }
   };
 
@@ -340,7 +341,7 @@ const MultiStepForm = () => {
           </div>
         </form>
       </div>
-    </div>
+    </div>  
   );
 };
 

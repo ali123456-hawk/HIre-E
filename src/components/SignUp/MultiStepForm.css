@@ -1,14 +1,19 @@
 /* Full-page container */
+
 .fullPageContainer {
-    margin-top: 1300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-    background-color: #1c1c3c;
-    padding: 20px;
-    color: #f7c873;
-  }
+  background-image: url('../../../images/HIre@E.png');
+  background-position: center; /* Centers the image */
+  background-size: cover; /* Scales the image to cover the container */
+  margin-top: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1800px;
+  background-color: #1c1c3c;
+  padding: 20px;
+  color: #f7c873;
+}
+
   
   /* Card-like container */
   .card {
